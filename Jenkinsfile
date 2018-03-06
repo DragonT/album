@@ -1,9 +1,14 @@
 pipeline {
   agent none
   stages {
-    stage('') {
+    stage('sleep') {
       steps {
-        sleep(time: 10, unit: 'SECONDS')
+        sleep 10
+      }
+    }
+    stage('sleep1') {
+      steps {
+        sleep 10
       }
     }
   }
